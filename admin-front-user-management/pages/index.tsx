@@ -2,29 +2,7 @@ import Head from 'next/head'
 import { Inter } from '@next/font/google'
 import styles from '../styles/Home.module.css'
 // import Link from 'next/link'
-import Navbar from '../components/navbar/navbar'
-
-
-import { ChakraProvider } from '@chakra-ui/react'
-
-import {
-  Box,
-  Flex,
-  Avatar,
-  HStack,
-  Link,
-  IconButton,
-  Button,
-  Menu,
-  MenuButton,
-  MenuList,
-  MenuItem,
-  MenuDivider,
-  useDisclosure,
-  useColorModeValue,
-  Stack,
-} from '@chakra-ui/react';
-
+import Navbar from '../components/layout/navbar/navbar'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -39,11 +17,11 @@ export default function Home() {
       </Head>
 
       <main >
-        <Navbar/>
-        
-       <h1 >
-        Smart DB User Management
-       </h1>
+        <div>
+          <h1>
+            Smart DB User Management
+          </h1>
+        </div>
 
       </main>
     </div>
